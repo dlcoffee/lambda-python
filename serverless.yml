@@ -13,8 +13,8 @@
 
 service: lambda-python
 # app and org for use with dashboard.serverless.com
-#app: your-app-name
-#org: your-org-name
+app: lambda-python
+org: dlcoffee
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -25,9 +25,10 @@ provider:
   runtime: python2.7
   lambdaHashingVersion: 20201221
 
-# you can overwrite defaults here
-#  stage: dev
-#  region: us-east-1
+  # you can overwrite defaults here
+  stage: dev
+  region: us-west-1
+  # profile: lambda-python
 
 # you can add statements to the Lambda function's IAM Role here
 #  iamRoleStatements:
@@ -57,9 +58,24 @@ provider:
 #    - include-me.py
 #    - include-me-dir/**
 
+plugins:
+  - serverless-offline
+
 functions:
-  hello:
-    handler: handler.hello
+  api:
+    handler: api.handler
+    events:
+      - http: GET /api
+
+  todos:
+    handler: todos.handler
+    events:
+      - http: GET /todos
+
+  todo:
+    handler: todo.handler
+    events:
+      - http: GET /todo/{id}
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
