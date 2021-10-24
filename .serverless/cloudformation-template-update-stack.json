@@ -231,10 +231,10 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/lambda-python/dev/1633362273993-2021-10-04T15:44:33.993Z/lambda-python.zip"
+          "S3Key": "serverless/lambda-python/dev/1635051233817-2021-10-24T04:53:53.817Z/lambda-python.zip"
         },
         "Handler": "s_api.handler",
-        "Runtime": "python2.7",
+        "Runtime": "python3.9",
         "FunctionName": "lambda-python-dev-api",
         "MemorySize": 1024,
         "Timeout": 6,
@@ -256,10 +256,10 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/lambda-python/dev/1633362273993-2021-10-04T15:44:33.993Z/lambda-python.zip"
+          "S3Key": "serverless/lambda-python/dev/1635051233817-2021-10-24T04:53:53.817Z/lambda-python.zip"
         },
         "Handler": "s_todos.handler",
-        "Runtime": "python2.7",
+        "Runtime": "python3.9",
         "FunctionName": "lambda-python-dev-todos",
         "MemorySize": 1024,
         "Timeout": 6,
@@ -281,10 +281,10 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/lambda-python/dev/1633362273993-2021-10-04T15:44:33.993Z/lambda-python.zip"
+          "S3Key": "serverless/lambda-python/dev/1635051233817-2021-10-24T04:53:53.817Z/lambda-python.zip"
         },
         "Handler": "s_todo.handler",
-        "Runtime": "python2.7",
+        "Runtime": "python3.9",
         "FunctionName": "lambda-python-dev-todo",
         "MemorySize": 1024,
         "Timeout": 6,
@@ -299,34 +299,34 @@
         "TodoLogGroup"
       ]
     },
-    "ApiLambdaVersionZQS7XLGSP1ToGSK8v3f0Ybi5uTHcIB1nMngkyhyu8": {
+    "ApiLambdaVersionyzfUOHkIy3Rwjl5x1QdaSbbfuZhWSgThJvrh8xrio": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "Z/IIpqa68Q+vEF9uhs1L0/x+5w48TesfAzzuXyJT9NM="
+        "CodeSha256": "BWLB6BL8ARR0dtLkHMqQZdgDXwtWs03F8qfySNs327Q="
       }
     },
-    "TodosLambdaVersionT4Jlv8cbBphCwQugquIYZtQoDXL4hXWwWsAQj6nbg": {
+    "TodosLambdaVersionxLJeHJYv8Tl9VclbOFcOxA0r5fVrv2ojX4RPb5jCA": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "TodosLambdaFunction"
         },
-        "CodeSha256": "Z/IIpqa68Q+vEF9uhs1L0/x+5w48TesfAzzuXyJT9NM="
+        "CodeSha256": "BWLB6BL8ARR0dtLkHMqQZdgDXwtWs03F8qfySNs327Q="
       }
     },
-    "TodoLambdaVersionlXihDgODI3sLo8ky16J79rm6ngpt91akCyffzHBwuQo": {
+    "TodoLambdaVersion0pzf9d5nvr4lDC00qO4y2g1Gwv2CYqklQg4UKjleI18": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "TodoLambdaFunction"
         },
-        "CodeSha256": "Z/IIpqa68Q+vEF9uhs1L0/x+5w48TesfAzzuXyJT9NM="
+        "CodeSha256": "BWLB6BL8ARR0dtLkHMqQZdgDXwtWs03F8qfySNs327Q="
       }
     },
     "ApiGatewayRestApi": {
@@ -536,7 +536,7 @@
         "TodoLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1633362263748": {
+    "ApiGatewayDeployment1635051227820": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -770,7 +770,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/lambda-python/dev/1633362273993-2021-10-04T15:44:33.993Z/custom-resources.zip"
+          "S3Key": "serverless/lambda-python/dev/1635051233817-2021-10-24T04:53:53.817Z/custom-resources.zip"
         },
         "FunctionName": "lambda-python-dev-custom-resource-apigw-cw-role",
         "Handler": "apiGatewayCloudWatchRole/handler.handler",
@@ -852,7 +852,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersionZQS7XLGSP1ToGSK8v3f0Ybi5uTHcIB1nMngkyhyu8"
+        "Ref": "ApiLambdaVersionyzfUOHkIy3Rwjl5x1QdaSbbfuZhWSgThJvrh8xrio"
       },
       "Export": {
         "Name": "sls-lambda-python-dev-ApiLambdaFunctionQualifiedArn"
@@ -861,7 +861,7 @@
     "TodosLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "TodosLambdaVersionT4Jlv8cbBphCwQugquIYZtQoDXL4hXWwWsAQj6nbg"
+        "Ref": "TodosLambdaVersionxLJeHJYv8Tl9VclbOFcOxA0r5fVrv2ojX4RPb5jCA"
       },
       "Export": {
         "Name": "sls-lambda-python-dev-TodosLambdaFunctionQualifiedArn"
@@ -870,7 +870,7 @@
     "TodoLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "TodoLambdaVersionlXihDgODI3sLo8ky16J79rm6ngpt91akCyffzHBwuQo"
+        "Ref": "TodoLambdaVersion0pzf9d5nvr4lDC00qO4y2g1Gwv2CYqklQg4UKjleI18"
       },
       "Export": {
         "Name": "sls-lambda-python-dev-TodoLambdaFunctionQualifiedArn"
